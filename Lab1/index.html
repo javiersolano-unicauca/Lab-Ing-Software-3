@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinica</title>
 </head>
-<body>
+<body
+    style="
+        background-color: #F0FAFF;
+        width: 97vw;
+        height: 115vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    "
+>
     <header 
         style="
-            width: 99vw;
-            height: 45vh;
+            width: 100%;
+            height: 38%;
             background-color: #4FC9DA;
             display: flex;
             flex-direction: column;
             align-content: center;
+            border-radius: 1rem;
         "
     >
         <h1 
@@ -34,19 +45,8 @@
             height="90"
             style="
                 margin-left: 45vw;
-                border-radius: 100%;
             "
         >
-        <sub
-            style="
-                display: flex;
-                justify-content: center;
-                text-align: center;
-            "
-        >
-            <!-- Usamos salto de linea -->
-            CLINIC <br> LOGO
-        </sub>
 
         <!-- Parrafo para la descripcion de la clinica -->
         <p
@@ -61,24 +61,32 @@
             <i>Atención en salud con enfoque en medicina alternativa en Popayan</i>
         </p>
     </header>
-    <main>
+    <main 
+        style="
+            width: 100%; 
+            height: 43%;
+        "
+    >
         <article
             style="
-                width: 99vw;
-                height: 45vh;
+                width: 100%;
+                height: 100%;
                 display: flex;
                 justify-content: center;
                 align-content: center;
+                border-radius: 1rem;
+                background-color: white;
             "
         >
             <section
                 style="
-                    width: 100%;
+                    width: 97%;
                     height: 100%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-content: center;
+                    border-radius: 1rem;
                 "
             >
                 <h2
@@ -102,7 +110,7 @@
                 </p>
                 <p>
                     Para registrarse, el sistemas solicitará su nombre completo y <b>número de docentes</b>.
-                    <sub>Los datos están protegios por políticas de confidencialidad médica.</sub>
+                    <small>Los datos están protegios por políticas de confidencialidad médica.</small>
                 </p>
                 <a 
                     href=""
@@ -115,19 +123,29 @@
                 >
                     Acceder al Portal de Pacientes
                 </a>
+
+                <!-- Usamos la marca del subindice para especificar el tipo de sistema -->
+                <p
+                    style="
+                        text-align: right;
+                    "
+                >
+                    Versión del Software: 2.0 <sub>web</sub>
+                </p>
             </section>
         </article>
     </main>
     <footer
         style="
-            width: 99vw;
-            height: 10vh;
+            width: 100%;
+            height: 13%;
             background-color: #A6C0DA;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
             padding-left: 1vw;
+            border-radius: 1rem;
         "
     >
         <small>Ubicación: Kilómetro 5 vía al Huila Popayán.</small>
