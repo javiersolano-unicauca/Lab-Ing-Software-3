@@ -1,0 +1,230 @@
+*
+{
+    font-family: verdana;
+}
+
+ body
+ {
+    width: 98vw;
+    background-color: #f9f9f9; 
+ }
+
+ /* Encabezado */
+
+ header
+ {
+    background-color: white;
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    gap: 3%;
+    border-bottom: 0.1rem dotted #0F6BBA;
+        border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+ }
+
+ #logo
+ {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3%;
+ }
+
+ #logo img
+ {
+    width: 14%; 
+    height: 80%;
+ }
+
+ #title
+ {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    align-content: center;
+ }
+
+ #title h1
+ {
+    font-size: 150%;
+    color: #0F6BBA;
+ }
+
+ /* Principal */
+
+ main
+ {
+    width: 100%;
+    height: 150vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 32% 32% 32%;
+    gap: 1.4%;
+ }
+
+ main .container
+ {
+    background-color: white;
+    height: 70vh;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+ }
+
+ main .container .description
+ {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: 0.1rem dotted #0F6BBA;
+    display: flex;
+    flex-direction: column;
+ }
+
+ main .container .description .title-description
+ {
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #0F6BBA;
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    align-content: center;
+ }
+
+ main .container .description .body-description
+ {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ }
+
+ main .container .description .body-description p
+ {
+    color: #0F6BBA;
+    width: 90%;
+    height: 90%;
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+ }
+
+ main .container .description .body-description p.justify-left
+ {
+    text-align: left;
+ }
+
+ main .container .description .body-description p.justify-center
+ {
+    text-align: center;
+ }
+
+ main .container .description .body-description p.justify-right
+ {
+    text-align: right;
+ }
+
+ main .container .event
+ {
+    width: 100%;
+    height: 40%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+ }
+
+ main .container .event .container-doctor
+ {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ main .container .event .container-doctor img
+ {
+    width: 20%;
+    height: 80%;
+    border-radius: 1rem;
+ }
+
+ main .container .event .container-button
+ {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ main .container .event .container-button button
+ {
+    width: 30%;
+    height: 60%;
+    background-color: white;
+    border: none;
+    border-radius: .5rem;
+    color: #0F6BBA;
+    border: 0.1rem solid #0F6BBA;
+ }
+
+ main .container .event .container-button button:hover
+ {
+    background-color: #0F6BBA;
+    color: white;
+ }
+
+ /* Pie de pagina */
+
+ footer
+ {
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    border-top: 0.1rem dotted #0F6BBA;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ footer #page-description-title
+ {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0F6BBA;
+ }
+
+ footer #page-description
+ {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ footer #page-description p
+ {
+    width: 90%;
+    height: 90%;
+    color: #0F6BBA;
+ }
