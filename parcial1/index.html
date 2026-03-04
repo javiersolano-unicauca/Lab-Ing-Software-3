@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcial 1</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <header class="container-fluid">
+    <div class="row p-3 d-flex justify-content-center">
+      <div id="logo" class="col-md-5 d-flex justify-content-center align-items-center">
+        <img class="img-fluid" src="logo.png" alt="Logo">
+      </div>
+      <div class="col-md-5 d-flex align-items-center justify-content-center">
+        <h1 id="title" title="Titulo">Medicos disponibles para citas</h1>
+      </div>
+    </div>
+  </header>
+  <nav class="container-fluid sticky-top">
+    <ul
+      class="nav nav-tabs row"
+      id="navId"
+      role="tablist"
+    >
+      <li class="nav-item col-md-3 col-sm-1" role="presentation">
+        <a href="#promociones" class="nav-link">Promociones</a>
+      </li>
+      <li class="nav-item col-md-3 col-sm-1" role="presentation">
+        <a href="#dating-specialties" class="nav-link">Especialidades y Citas</a>
+      </li>
+      <li class="nav-item col-md-3 col-sm-1" role="presentation">
+        <a href="#tab5Id" class="nav-link"></a>
+      </li>
+    </ul>
+  </nav>
+  <main class="container-fluid">
+    <article class="container-fluid">
+      <section id="promociones" class="container-fluid row">
+        <div id="carousel" class="carousel mt-3 col-12 col-md-10 slide container-fluid" data-bs-ride="carousel">
+          <div class="carousel-inner w-100 h-100">
+            <div class="carousel-item w-100 h-100 active">
+              <img src="pexels-cristian-rojas-8460371.jpg" class="img-carousel img-fluid w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item w-100 h-100">
+              <img src="pexels-rdne-6129649.jpg" class="img-carousel img-fluid w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item w-100 h-100">
+              <img src="pexels-klaus-nielsen-6303600.jpg" class="img-carousel img-fluid w-100 h-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section id="dating-specialties" class="container-fluid row mt-4 d-flex justify-content-between">
+        <aside class="col-12 col-md-4 col-sm-2 h-50">
+          <h2>Especialidades</h2>
+          <div class="list-group shadow">
+            <a href="#" class="list-group-item list-group-item-action">Terapia neural</a>
+            <a href="#" class="list-group-item list-group-item-action">Quiropraxia</a>
+            <a href="#" class="list-group-item list-group-item-action">Fisioterapia</a>
+            <a href="#" class="list-group-item list-group-item-action">Nutrición</a>
+            <a href="#" class="list-group-item list-group-item-action">Dietética Terapéutica</a>
+          </div>
+        </aside>
+        <div class="col-12 col-md-8 col-sm-10 container-fluid row g-0">
+          <div class="col-md-4 d-flex justify-content-center mt-2">
+            <div class="card col-md-11 text-center border-0 shadow d-flex justify-content-center">
+              <div class="col-8 mt-3 mx-auto">
+                <img src="doctor.png" class="card-img-top" alt="Doctor">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Dr. Juan Peréz</h5>
+                <p class="card-text">
+                  Especialista en Fisioterapia Deportiva. <br> Comprometido con tu recuperación
+                </p>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center mt-2">
+            <div class="card col-md-11 text-center border-0 shadow d-flex justify-content-center">
+              <div class="col-8 mt-3 mx-auto">
+                <img src="doctor.png" class="card-img-top" alt="Doctor">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Dr. Juan Peréz</h5>
+                <p class="card-text">
+                  Especialista en Fisioterapia Deportiva. <br> Comprometido con tu recuperación
+                </p>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center mt-2">
+            <div class="card col-md-11 text-center border-0 shadow d-flex justify-content-center">
+              <div class="col-8 mt-3 mx-auto">
+                <img src="doctor.png" class="card-img-top" alt="Doctor">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Dr. Juan Peréz</h5>
+                <p class="card-text">
+                  Especialista en Fisioterapia Deportiva. <br> Comprometido con tu recuperación
+                </p>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center mt-2">
+            <div class="card col-md-11 text-center border-0 shadow d-flex justify-content-center">
+              <div class="col-8 mt-3 mx-auto">
+                <img src="doctor.png" class="card-img-top" alt="Doctor">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Dr. Juan Peréz</h5>
+                <p class="card-text">
+                  Especialista en Fisioterapia Deportiva. <br> Comprometido con tu recuperación
+                </p>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center mt-2">
+            <div class="card col-md-11 text-center border-0 shadow d-flex justify-content-center">
+              <div class="col-8 mt-3 mx-auto">
+                <img src="doctor.png" class="card-img-top" alt="Doctor">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Dr. Juan Peréz</h5>
+                <p class="card-text">
+                  Especialista en Fisioterapia Deportiva. <br> Comprometido con tu recuperación
+                </p>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net"></script>
+</body>
+</html>
