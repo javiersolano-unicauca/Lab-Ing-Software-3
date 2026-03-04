@@ -63,3 +63,8 @@ h2
 {
     color: #0F6BBA;
 }
+
+footer
+{
+    border-top: 0.1rem dotted #0F6BBA;
+}
