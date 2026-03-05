@@ -12,8 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="index.css">
-
-  <script src="validacion.js"></script>
+  <script type="module" src="specialties.js"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
@@ -22,12 +21,20 @@
 <body>
   <header class="container-fluid">
     <div class="row p-3 d-flex justify-content-center">
-      <div id="logo" class="col-md-5 d-flex justify-content-center align-items-center">
+      <div id="logo" class="col-md-4 d-flex justify-content-center align-items-center">
         <img class="img-fluid" src="logo.png" alt="Logo">
       </div>
-      <div class="col-md-5 d-flex align-items-center justify-content-center">
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
         <h1 id="title" title="Titulo">Medicos disponibles para citas</h1>
       </div>
+      <div class="container  col-md-4 d-flex justify-content-center py-5" style="background-color: white;">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
+            <i class="fab fa-whatsapp"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
+            <i class="fab fa-instagram"></i>
+          </button>        
+      </div>  
     </div>
   </header>
   <nav class="container-fluid sticky-top">
@@ -74,14 +81,13 @@
       </section>
       <section id="dating-specialties" class="container-fluid row mt-4 d-flex justify-content-between">
         <aside class="col-12 col-md-4 col-sm-12 h-50">
-          <h2>Especialidades</h2>
-          <div class="list-group shadow">
-            <a href="#" class="list-group-item list-group-item-action">Terapia neural</a>
-            <a href="#" class="list-group-item list-group-item-action">Quiropraxia</a>
-            <a href="#" class="list-group-item list-group-item-action">Fisioterapia</a>
-            <a href="#" class="list-group-item list-group-item-action">Nutrición</a>
-            <a href="#" class="list-group-item list-group-item-action">Dietética Terapéutica</a>
+          <div class="col-12">
+            <h2>Especialidades</h2>
+            <div id="specialties" class="list-group shadow"></div>
           </div>
+          <div id="specialties-description" class="alert alert-primary col-12 mt-3 shadow" role="alert">
+            Seleccione una especialidad para leer su descripción
+          </div>  
         </aside>
         <div class="col-12 col-md-8 col-sm-10 container-fluid row g-0">
           <div class="col-md-4 col-sm-6 col-lg-3 d-flex justify-content-center mt-2">
@@ -229,6 +235,7 @@
               </div>
         </form>  
       </section>
+
       <div class="container-fluid my-5">
         <footer class="text-center text-lg-start rounded-3">
           <div class="container d-flex justify-content-center py-5" style="background-color: white;">
@@ -236,7 +243,7 @@
               <i class="fab fa-facebook-f"></i>
             </button>
             <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
-              <i class="fab fa-youtube"></i>
+              <i class="fab fa-x"></i>
             </button>        
           </div>  
           <div class="text-center text-white p-3 bg-primary" style="background-color: rgba(0, 0, 0, 0.2);">
@@ -250,5 +257,8 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net"></script>
+
+  <script src="validacion.js"></script>
+  <script type="module" src="specialties-handler.js"></script>
 </body>
 </html>
