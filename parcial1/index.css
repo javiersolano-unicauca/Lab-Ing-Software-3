@@ -68,3 +68,17 @@ footer
 {
     border-top: 0.1rem dotted #0F6BBA;
 }
+
+@media (max-width: 768px) {
+  .sticky-top {
+    top: 0 !important;
+    position: sticky !important;
+    z-index: 1030; /* Para que pase por encima de las fotos de los doctores */
+  }
+
+  /* Quitamos el margen negativo de la fila que traen las pestañas */
+  #navId.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}

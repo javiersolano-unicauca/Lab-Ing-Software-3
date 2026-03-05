@@ -21,20 +21,12 @@
 <body>
   <header class="container-fluid">
     <div class="row p-3 d-flex justify-content-center">
-      <div id="logo" class="col-md-4 d-flex justify-content-center align-items-center">
+      <div id="logo" class="col-md-4 col-sm-12 col-12 d-flex justify-content-center align-items-center">
         <img class="img-fluid" src="logo.png" alt="Logo">
       </div>
-      <div class="col-md-4 d-flex align-items-center justify-content-center">
+      <div class="col-md-4 col-sm-12 col-12 d-flex align-items-center justify-content-center">
         <h1 id="title" title="Titulo">Medicos disponibles para citas</h1>
       </div>
-      <div class="container  col-md-4 d-flex justify-content-center py-5" style="background-color: white;">
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
-            <i class="fab fa-whatsapp"></i>
-          </button>
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
-            <i class="fab fa-instagram"></i>
-          </button>        
-      </div>  
     </div>
   </header>
   <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-white shadow-sm p-0">
@@ -43,7 +35,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navPestanas">
-        <ul class="nav nav-tabs row w-100 m-0 border-bottom-0" id="navId" role="tablist">
+        <ul class="nav nav-tabs row w-100 m-0 border-bottom-0 g-0" id="navId" role="tablist">
           <li class="nav-item col-md-3 col-sm-12 text-center" role="presentation">
             <a href="#promociones" class="nav-link">Promociones</a>
           </li>
@@ -52,6 +44,16 @@
           </li>
           <li class="nav-item col-md-3 col-sm-12 text-center" role="presentation">
             <a href="#register" class="nav-link">Formulario de registro</a>
+          </li>
+          <li class="nav-item col-md-3 col-sm-12" role="presentation">
+            <div class="container col-md-4 col-sm-12 col-12 d-flex justify-content-center py-1"> 
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
+                <i class="fab fa-whatsapp"></i>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
+                <i class="fab fa-instagram"></i>
+              </button>        
+            </div>  
           </li>
         </ul>
       </div>
@@ -63,13 +65,13 @@
         <div id="carousel" class="carousel mt-3 col-sm-12 col-md-10 col-lg-12 slide container-fluid" data-bs-ride="carousel">
           <div class="carousel-inner w-100 h-100">
             <div class="carousel-item w-100 h-100 active">
-              <img src="pexels-cristian-rojas-8460371.jpg" class="img-carousel img-fluid w-100 h-100" alt="...">
+              <img src="pexels-cristian-rojas-8460371.jpg" class="d-block img-fluid rounded-4 w-100 h-100" alt="...">
             </div>
             <div class="carousel-item w-100 h-100">
-              <img src="pexels-rdne-6129649.jpg" class="img-carousel img-fluid w-100 h-100" alt="...">
+              <img src="pexels-rdne-6129649.jpg" class="d-block img-fluid rounded-4 w-100 h-100" alt="...">
             </div>
             <div class="carousel-item w-100 h-100">
-              <img src="pexels-klaus-nielsen-6303600.jpg" class="img-carousel img-fluid w-100 h-100" alt="...">
+              <img src="pexels-klaus-nielsen-6303600.jpg" class="d-block img-fluid rounded-4 w-100 h-100" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
