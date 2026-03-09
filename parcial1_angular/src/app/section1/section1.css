@@ -1,0 +1,14 @@
+.carousel
+{
+    height: 65vh;
+}
+
+.carousel-item
+{
+    border-radius: 1rem;
+}
+
+.img-carousel
+{
+    border-radius: 1rem;
+}

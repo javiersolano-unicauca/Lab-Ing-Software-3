@@ -1,0 +1,29 @@
+<nav class="navbar navbar-dark navbar-expand-md sticky-top bg-white shadow-sm p-0">
+    <div class="container-fluid">
+        <button class="navbar-toggler ms-auto my-2 bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navPestanas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navPestanas">
+            <ul class="nav nav-tabs row w-100 m-0 border-bottom-0 g-0" id="navId" role="tablist">
+
+                @for(item of items | keyvalue; track item) 
+                {
+                    <li class="nav-item col-md-3 col-sm-12 text-center" role="presentation">
+                        <a href="#{{item.key}}" class="nav-link">{{item.value}}</a>
+                    </li>
+                } 
+
+                <li class="nav-item col-md-3 col-sm-12" role="presentation">
+                    <div class="container col-md-4 col-sm-12 col-12 d-flex justify-content-center py-1"> 
+                        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
+                            <i class="fab fa-instagram"></i>
+                        </button>        
+                    </div>  
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

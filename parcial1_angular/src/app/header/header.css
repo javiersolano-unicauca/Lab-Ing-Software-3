@@ -1,0 +1,26 @@
+header
+{
+    height: 25vh;
+    background-color: white;
+}
+
+header .row
+{
+    height: 100%;
+}
+
+#logo
+{
+    height: 90%;
+}
+
+#logo img
+{
+    height: 80%;
+}
+
+#title
+{
+    font-size: 150%;
+    color: #0F6BBA;
+}

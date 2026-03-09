@@ -1,0 +1,75 @@
+<section id="register" class="container-fluid mt-5">
+    <h3 class="text-center mb-4">Formulario para el envío de solicitud de contacto </h3>
+    <p class="lead">
+        Este formulario con bootstrap permite registrar una solicitud para que el estudiante se incorpore a 
+        un semillero de su empresa o para que pueda realizar pasantías o prácticas en la empresa.
+    </p>
+   <form #formularioContacto (ngSubmit)="validarFormulario()" novalidate>
+        
+        <!-- Tipo de Identificación -->
+        <div class="mb-3">
+            <label for="identificacion" class="form-label">Tipo de Identificación:</label>
+            <!-- #identificacion para el TS -->
+            <select #identificacion id="identificacion" name="tipo-identificacion" class="form-select">
+                <option value="" disabled selected>Seleccione un tipo de identificación</option>
+                <option value="cc">Cédula de Ciudadanía</option>
+                <option value="ti">Tarjeta de Identidad</option>
+                <option value="ce">Cédula de Extranjería</option>
+                <option value="pas">Pasaporte</option>
+            </select>
+            <!-- #errorTipoIdentificacion para el TS -->
+            <label #errorTipoIdentificacion class="text-danger form-text"></label><br>
+        </div>    
+        
+        <div class="mb-3">
+            <label for="numero-identificacion" class="form-label">Número de Identificación:</label>
+            <input #numeroIdentificacion type="text" id="numero-identificacion" name="numero-identificacion" class="form-control" placeholder="Número de identificación">
+            <label #errorNumeroIdentificacion class="text-danger form-text"></label><br>
+        </div>    
+        
+        <div class="mb-3">
+            <label for="nombres" class="form-label">Nombres:</label>
+            <input #nombres type="text" id="nombres" name="nombres" class="form-control" placeholder="Nombres del usuario">
+            <label #errorNombres class="text-danger form-text"></label><br>
+        </div>    
+        
+        <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellidos:</label>
+            <input #apellidos type="text" id="apellidos" name="apellidos" class="form-control" placeholder="Apellidos del usuario" >
+            <label #errorApellidos class="text-danger form-text"></label><br>
+        </div>    
+        
+        <div class="mb-3">
+            <label for="correo-electronico" class="form-label">Correo Electrónico:</label>
+            <input #correoElectronico type="email" id="correo-electronico" name="correo-electronico" class="form-control" placeholder="correo@ejemplo.com" >
+            <label #errorCorreo class="text-danger form-text"></label><br>
+        </div>    
+        
+        <fieldset class="mb-3">
+            <legend class="form-label">Género:</legend>
+            <div class="form-check form-check-inline">
+                <!-- Los radios usan todos la misma marca #generoRadio para el @ViewChildren -->
+                <input #generoRadio class="form-check-input" type="radio" id="femenino" name="genero" value="femenino" >
+                <label class="form-check-label" for="femenino">Femenino</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input #generoRadio class="form-check-input" type="radio" id="masculino" name="genero" value="masculino">
+                <label class="form-check-label" for="masculino">Masculino</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input #generoRadio class="form-check-input" type="radio" id="otro" name="genero" value="otro">
+                <label class="form-check-label" for="otro">Otro</label>
+            </div>
+            <label #errorGenero class="text-danger form-text"></label><br>
+        </fieldset>
+            
+        <div class="mb-3">
+            <label for="fecha-nacimiento" class="form-label">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" class="form-control" >                
+        </div>    
+        
+        <div class="d-flex justify-content-start">
+            <button type="submit" id="btnRegistrar" class="btn btn-primary">Registrar</button>
+        </div>
+    </form>
+</section>

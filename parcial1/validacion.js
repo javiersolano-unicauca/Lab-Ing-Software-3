@@ -1,5 +1,6 @@
 
-function validarCampoObligatorio(campo, errorElement, mensaje) {
+function validarCampoObligatorio(campo, errorElement, mensaje) 
+{
     if (campo.value.trim() === '') {
         errorElement.textContent = mensaje;
         return false;
@@ -9,7 +10,10 @@ function validarCampoObligatorio(campo, errorElement, mensaje) {
     }
 }
 
-function validarLongitud(campo, errorElement, min, max, mensaje) {
+function validarLongitud(campo, errorElement, min, max, mensaje) 
+{
+    this.renderer.addClass(campo.nativeElement, 'is-invalid');
+
     if (campo.value.length < min || campo.value.length > max) {
         errorElement.textContent = mensaje;
         return false;
@@ -125,14 +129,39 @@ function validarCamposAlCambiarFoco()
     inputTipoIdentificacion.addEventListener('blur',()=> validarCampoObligatorio(
         inputTipoIdentificacion,
         labelErrorTipoIdentificacion,
-        "El tipo de identificación es obligatorio"));
-        
-    inputIdentificacion.addEventListener('blur', () => validarCampoObligatorio(inputIdentificacion, labelErrorNumeroIdentificacion, 'El número de id es obligatorio.'));
-    inputNombres.addEventListener('blur', () => validarLongitud(inputNombres, labelErrorNombres, 1, 20, 'El nombre debe tener entre 1 y 20 caracteres.'));
-    inputApellidos.addEventListener('blur', () => validarLongitud(inputApellidos, labelErrorApellidos, 1, 20, 'El apellido debe tener entre 1 y 20 caracteres.'));
-    inputCorreoElectronico.addEventListener('blur', () => validarCorreo(inputCorreoElectronico, labelErrorCorreo,'El correo debe tener el dominio @unicauca.edu.co'));
-    Array.from(inputGenero).forEach(input => input.addEventListener('blur', () => validarGenero(inputGenero, labelErrorGenero,'El género es obligatorio')));
+        "El tipo de identificación es obligatorio"
+    ));    
+    inputIdentificacion.addEventListener('blur', () => validarCampoObligatorio(
+        inputIdentificacion, 
+        labelErrorNumeroIdentificacion, 
+        'El número de id es obligatorio.'
+    ));
+    inputNombres.addEventListener('blur', () => validarLongitud(
+        inputNombres, 
+        labelErrorNombres, 
+        1, 
+        20, 
+        'El nombre debe tener entre 1 y 20 caracteres.'
+    ));
+    inputApellidos.addEventListener('blur', () => validarLongitud(
+        inputApellidos, 
+        labelErrorApellidos, 
+        1, 
+        20, 
+        'El apellido debe tener entre 1 y 20 caracteres.'
+    ));
+    inputCorreoElectronico.addEventListener('blur', () => validarCorreo(
+        inputCorreoElectronico, 
+        labelErrorCorreo,
+        'El correo debe tener el dominio @unicauca.edu.co'
+    ));
+    Array.from(inputGenero).forEach(input => input.addEventListener(
+        'blur', () => validarGenero(
+            inputGenero, 
+            labelErrorGenero,
+            'El género es obligatorio'
+        )
+    ));
 }
 
 document.addEventListener('DOMContentLoaded', validarCamposAlCambiarFoco);
-

@@ -1,0 +1,18 @@
+nav
+{
+    border-bottom: 0.1rem dotted #0F6BBA;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: white;
+}
+
+nav ul
+{
+    border-bottom: none !important;
+}
+
+nav ul li a:hover
+{
+    background-color: #0F6BBA;
+    color: white !important; 
+}

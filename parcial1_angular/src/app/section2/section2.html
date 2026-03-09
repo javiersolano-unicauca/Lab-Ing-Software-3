@@ -1,0 +1,44 @@
+<section id="dating-specialties" class="container-fluid row mt-4 d-flex justify-content-center">
+    <aside class="col-12 col-md-4 col-sm-12 h-50">
+        <div class="col-12">
+            <h2>Especialidades</h2>
+            <div id="specialties" class="list-group shadow">
+
+                @for(specialty of specialties | keyvalue; track specialty.key)
+                {
+                    <button 
+                        class="list-group-item list-group-item-action"
+                        (click)="
+                            specialties_description.textContent = getDescriptionSpeciality(specialty.key) ?? 'No hay descripcion'
+                        "
+                    >{{specialty.key}}</button>
+                }
+
+            </div>
+        </div>
+        <div #specialties_description class="alert alert-primary col-12 mt-3 shadow" role="alert">
+            Seleccione una especialidad para leer su descripción
+        </div>  
+    </aside>
+    <div class="col-12 col-md-8 col-sm-10 container-fluid row g-0">
+
+        @for(doctor of doctors | keyvalue; track doctor)
+        {
+            <div class="col-md-4 col-sm-6 col-lg-3 d-flex justify-content-center mt-2">
+                <div class="card col-md-11 text-center border-0 shadow d-flex justify-content-center">
+                    <div class="col-8 mt-3 mx-auto">
+                        <img src="doctor.png" class="card-img-top" alt="Doctor">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{doctor.key}}</h5>
+                        <p class="card-text">
+                            {{doctor.value[0]}} <br> {{doctor.value[1]}}
+                        </p>
+                        <button type="button" class="btn btn-primary">Agendar Cita</button>
+                    </div>
+                </div>
+            </div>
+        }
+        
+    </div>
+</section>
