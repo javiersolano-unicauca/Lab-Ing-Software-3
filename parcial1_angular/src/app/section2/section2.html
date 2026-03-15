@@ -22,19 +22,19 @@
     </aside>
     <div class="col-12 col-md-8 col-sm-10 container-fluid row g-0">
 
-        @for(doctor of doctors | keyvalue; track doctor)
+        @for(doctor of doctors; track doctor)
         {
             <div class="col-md-4 col-sm-6 col-lg-3 d-flex justify-content-center mt-2">
                 <div class="card col-md-11 text-center border-0 shadow d-flex justify-content-center">
                     <div class="col-8 mt-3 mx-auto">
-                        <img src="doctor.png" class="card-img-top" alt="Doctor">
+                        <img src="doctor-{{doctor.gender}}.png" class="card-img-top" alt="Doctor">
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">{{doctor.key}}</h5>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">{{doctor.name}}</h5>
                         <p class="card-text">
-                            {{doctor.value[0]}} <br> {{doctor.value[1]}}
+                            {{doctor.specialty}} <br> {{doctor.descriptionSpecialty}}
                         </p>
-                        <button type="button" class="btn btn-primary">Agendar Cita</button>
+                        <button type="button" class="btn btn-primary mt-auto">Agendar Cita</button>
                     </div>
                 </div>
             </div>

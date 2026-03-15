@@ -1,7 +1,9 @@
 header
 {
     height: 25vh;
-    background-color: white;
+    background: linear-gradient(135deg, #0F6BBA 0%, #0a4a85 60%, #072f56 100%);
+    position: relative;
+    overflow: hidden;
 }
 
 header .row
@@ -9,18 +11,22 @@ header .row
     height: 100%;
 }
 
-#logo
-{
-    height: 90%;
+.header-curves {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+  pointer-events: none;
 }
 
-#logo img
+#logo
 {
     height: 80%;
 }
 
 #title
 {
-    font-size: 150%;
-    color: #0F6BBA;
+    font-size: 200%;
+    color: white;
 }

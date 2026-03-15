@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 export class Section1 {
 
   protected readonly items: string[] = [
-    'carousel-1',
-    'carousel-2',
-    'carousel-3'
+    'carousel_1',
+    'carousel_2',
+    'carousel_3'
   ];
 }

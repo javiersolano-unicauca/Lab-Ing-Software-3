@@ -2,3 +2,16 @@ h3
 {
     color: #0F6BBA;
 }
+
+.form-icon
+{
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0;
+    background: linear-gradient(135deg, #0F6BBA 0%, #3d8fce 50%, #ffffff 100%); 
+}
+
+#form-register
+{
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0;
+}

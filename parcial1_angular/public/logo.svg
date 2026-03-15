@@ -1,0 +1,56 @@
+<svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Sombra logo -->
+  <circle cx="62" cy="60" r="52" fill="rgba(0,0,0,0.18)"/>
+  <!-- Círculo blanco -->
+  <circle cx="62" cy="60" r="50" fill="#ffffff"/>
+  <!-- Anillo verde -->
+  <circle cx="62" cy="60" r="48" fill="none" stroke="#7DC243" stroke-width="4"/>
+  <!-- Anillo azul -->
+  <circle cx="62" cy="60" r="43" fill="none" stroke="#0F6BBA" stroke-width="2"/>
+  <!-- Interior blanco -->
+  <circle cx="62" cy="60" r="40" fill="#ffffff"/>
+
+  <!-- Cruz -->
+  <path d="M47 18 L77 18 Q82 18 82 23 L82 44 L98 44 Q103 44 103 49 L103 63 Q103 68 98 68 L82 68 L82 89 Q82 94 77 94 L47 94 Q42 94 42 89 L42 68 L26 68 Q21 68 21 63 L21 49 Q21 44 26 44 L42 44 L42 23 Q42 18 47 18Z"
+    fill="none" stroke="#7DC243" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Vara -->
+  <line x1="62" y1="27" x2="62" y2="92" stroke="#0F6BBA" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="62" cy="25" r="4.5" fill="#0F6BBA"/>
+
+  <!-- Alas -->
+  <path d="M62 31 C53 27 42 24 34 27 C41 30 51 35 56 40 Z" fill="#0F6BBA"/>
+  <path d="M62 38 C54 35 44 33 37 36 C44 38 53 42 58 46 Z" fill="#0F6BBA" opacity="0.65"/>
+  <path d="M62 31 C71 27 82 24 90 27 C83 30 73 35 68 40 Z" fill="#0F6BBA"/>
+  <path d="M62 38 C70 35 80 33 87 36 C80 38 71 42 66 46 Z" fill="#0F6BBA" opacity="0.65"/>
+
+  <!-- Serpientes -->
+  <path d="M62 43 C55 48 52 56 58 63 C65 70 61 77 54 81 C48 85 50 92 55 95" fill="none" stroke="#0F6BBA" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M62 43 C69 48 72 56 66 63 C59 70 63 77 70 81 C76 85 74 92 69 95" fill="none" stroke="#0F6BBA" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- Nudos -->
+  <ellipse cx="59" cy="54" rx="3.2" ry="2.2" fill="#fff" stroke="#0F6BBA" stroke-width="1.2"/>
+  <ellipse cx="65" cy="54" rx="3.2" ry="2.2" fill="#fff" stroke="#0F6BBA" stroke-width="1.2"/>
+  <ellipse cx="57" cy="68" rx="3.2" ry="2.2" fill="#fff" stroke="#0F6BBA" stroke-width="1.2"/>
+  <ellipse cx="67" cy="68" rx="3.2" ry="2.2" fill="#fff" stroke="#0F6BBA" stroke-width="1.2"/>
+  <ellipse cx="55" cy="81" rx="3.2" ry="2.2" fill="#fff" stroke="#0F6BBA" stroke-width="1.2"/>
+  <ellipse cx="69" cy="81" rx="3.2" ry="2.2" fill="#fff" stroke="#0F6BBA" stroke-width="1.2"/>
+
+  <!-- Separador -->
+  <line x1="132" y1="22" x2="132" y2="98" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+
+  <!-- Subtítulo -->
+  <text x="148" y="37" font-family="'Trebuchet MS',Arial,sans-serif" font-size="9" letter-spacing="3.5" fill="rgba(255,255,255,0.55)">CLÍNICA DE MEDICINA ALTERNATIVA</text>
+
+  <!-- Nombre -->
+  <text x="148" y="70" font-family="Georgia,'Times New Roman',serif" font-size="30" font-weight="700" letter-spacing="2">
+    <tspan fill="#ffffff">PIEDRA </tspan><tspan fill="#7DC243">AZUL</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <line x1="148" y1="88" x2="174" y2="88" stroke="#7DC243" stroke-width="1.2" opacity="0.85"/>
+  <text x="180" y="92" font-family="Georgia,'Times New Roman',serif" font-size="11" font-style="italic" letter-spacing="1.5" fill="rgba(255,255,255,0.7)">Sanando desde la naturaleza</text>
+  <line x1="392" y1="88" x2="418" y2="88" stroke="#7DC243" stroke-width="1.2" opacity="0.85"/>
+
+</svg>

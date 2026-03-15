@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './header.css',
 })
 export class Header {
-  protected readonly title = 'Medicos disponibles para citas'
+  protected readonly title = 'Clinica Piedra Azul'
 }

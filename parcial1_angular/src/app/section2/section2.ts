@@ -1,6 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
+interface Doctor
+{
+  name: string; 
+  gender: string;
+  specialty: string;
+  descriptionSpecialty: string;
+}
+
 @Component({
   selector: 'app-section2',
   imports: [CommonModule],
@@ -10,7 +18,7 @@ import { Component } from '@angular/core';
 export class Section2 {
 
   protected readonly specialties: Map<string,string> = new Map();
-  protected readonly doctors: Map<string,string[]> = new Map();
+  protected readonly doctors: Array<Doctor> = new Array();
 
   constructor()
   {
@@ -34,25 +42,35 @@ export class Section2 {
 
   private loadDoctors()
   {
-    this.doctors.set(
-      'Dr. Juan Peréz', 
-      ['Especialista en Fisioterapia Deportiva.', 'Comprometido con tu recuperación']
-    );
-    this.doctors.set(
-      'Dr. Catalina Sanchez', 
-      ['Especialista en Quiropraxia.', 'La salud es fundamental']
-    );
-    this.doctors.set(
-      'Dr. Andres Cardozo',
-      ['Especialista en Nutrición y Dietética Terapéutica.', 'Un alimento sano alrga la vida']
-    );
-    this.doctors.set(
-      'Dr. Solano',
-      ['Especialista en Quiropraxia y Fisioterapia.', 'Comprometido con tu recuperación']
-    );
-    this.doctors.set(
-      'Dr. Paez',
-      ['Especialista en Terapia Neural.', 'Comprometido con tu bienestar']
-    );
+    this.doctors.push({
+      name: 'Dr. Juan Peréz',
+      gender: 'male',
+      specialty: 'Especialista en Fisioterapia Deportiva.',
+      descriptionSpecialty: 'Comprometido con tu recuperación'
+    });
+    this.doctors.push({
+      name: 'Dr. Catalina Sanchez',
+      gender: 'female',
+      specialty: 'Especialista en Quiropraxia.',
+      descriptionSpecialty: 'La salud es fundamental'
+    });
+    this.doctors.push({
+      name: 'Dr. Andres Cardozo',
+      gender: 'male',
+      specialty: 'Especialista en Nutrición y Dietética Terapéutica.',
+      descriptionSpecialty: 'Un alimento sano alrga la vida'
+    });
+    this.doctors.push({
+      name: 'Dr. Solano',
+      gender: 'male',
+      specialty: 'Especialista en Quiropraxia y Fisioterapia.',
+      descriptionSpecialty: 'Comprometido con tu recuperación'
+    });
+    this.doctors.push({
+      name: 'Dr. Paez',
+      gender: 'male',
+      specialty: 'Especialista en Terapia Neural.',
+      descriptionSpecialty: 'Comprometido con tu bienestar'
+    });
   }
 }

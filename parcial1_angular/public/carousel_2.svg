@@ -1,0 +1,42 @@
+<svg width="100%" viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="ca2"><rect width="680" height="400" rx="16"/></clipPath>
+  </defs>
+  <g clip-path="url(#ca2)">
+    <rect width="680" height="400" fill="#0F6BBA"/>
+    <!-- Panel derecho suave -->
+    <rect x="400" y="0" width="280" height="400" fill="#ffffff" opacity="0.06"/>
+    <!-- Planta / raíz decorativa izquierda -->
+    <line x1="60" y1="400" x2="60" y2="220" stroke="#ffffff" stroke-width="1.5" opacity="0.2"/>
+    <line x1="60" y1="300" x2="30" y2="260" stroke="#ffffff" stroke-width="1" opacity="0.15"/>
+    <line x1="60" y1="270" x2="90" y2="235" stroke="#ffffff" stroke-width="1" opacity="0.15"/>
+    <line x1="60" y1="245" x2="35" y2="210" stroke="#ffffff" stroke-width="1" opacity="0.15"/>
+    <ellipse cx="60" cy="215" rx="14" ry="20" fill="#ffffff" opacity="0.12" transform="rotate(-10 60 215)"/>
+    <ellipse cx="30" cy="255" rx="10" ry="16" fill="#ffffff" opacity="0.1" transform="rotate(20 30 255)"/>
+    <ellipse cx="92" cy="230" rx="12" ry="18" fill="#ffffff" opacity="0.1" transform="rotate(-25 92 230)"/>
+    <ellipse cx="35" cy="205" rx="9" ry="14" fill="#ffffff" opacity="0.09" transform="rotate(10 35 205)"/>
+    <!-- Planta derecha -->
+    <line x1="630" y1="0" x2="630" y2="180" stroke="#ffffff" stroke-width="1.5" opacity="0.15"/>
+    <ellipse cx="630" cy="80"  rx="14" ry="22" fill="#ffffff" opacity="0.1" transform="rotate(15 630 80)"/>
+    <ellipse cx="610" cy="120" rx="12" ry="18" fill="#ffffff" opacity="0.09" transform="rotate(-20 610 120)"/>
+    <ellipse cx="650" cy="100" rx="11" ry="17" fill="#ffffff" opacity="0.09" transform="rotate(30 650 100)"/>
+    <!-- Header -->
+    <text x="120" y="52" font-family="Georgia,serif" font-size="10" fill="#ffffff" opacity="0.5" letter-spacing="6">CLÍNICA PIEDRA AZUL</text>
+    <!-- Título -->
+    <text x="120" y="108" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#ffffff">Medicina</text>
+    <text x="120" y="148" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#ffffff">Natural &amp;</text>
+    <text x="120" y="188" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#ffffff">Homeopatía</text>
+    <line x1="120" y1="202" x2="370" y2="202" stroke="#ffffff" stroke-width="0.6" opacity="0.3"/>
+    <!-- Descripción -->
+    <text x="120" y="232" font-family="Georgia,serif" font-size="13" fill="#ffffff" opacity="0.75">Tratamientos naturales para restaurar</text>
+    <text x="120" y="252" font-family="Georgia,serif" font-size="13" fill="#ffffff" opacity="0.75">el equilibrio de tu cuerpo y mente.</text>
+    <!-- Lista servicios -->
+    <text x="120" y="288" font-family="Georgia,serif" font-size="12" fill="#ffffff" opacity="0.6">— Homeopatía clásica</text>
+    <text x="120" y="310" font-family="Georgia,serif" font-size="12" fill="#ffffff" opacity="0.6">— Plantas medicinales</text>
+    <text x="120" y="332" font-family="Georgia,serif" font-size="12" fill="#ffffff" opacity="0.6">— Terapia floral</text>
+    <!-- CTA -->
+    <rect x="120" y="352" width="180" height="38" rx="19" fill="#ffffff" opacity="0.12"/>
+    <rect x="120" y="352" width="180" height="38" rx="19" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.45"/>
+    <text x="210" y="376" text-anchor="middle" font-family="Georgia,serif" font-size="12" font-weight="700" fill="#ffffff">Conoce más</text>
+  </g>
+</svg>

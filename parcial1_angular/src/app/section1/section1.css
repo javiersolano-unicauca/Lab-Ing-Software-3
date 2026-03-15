@@ -1,6 +1,6 @@
 .carousel
 {
-    height: 65vh;
+    height: 80vh;
 }
 
 .carousel-item
@@ -11,4 +11,12 @@
 .img-carousel
 {
     border-radius: 1rem;
+}
+
+/* Aumentar el tamaño del icono de la flecha */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 4rem;  /* Valor por defecto es 2rem */
+    height: 4rem;
+    background-size: 70%;
 }

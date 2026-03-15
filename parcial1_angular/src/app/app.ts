@@ -10,7 +10,6 @@ import { Footer } from './footer/footer';
 @Component({
   selector: 'app-root',
   imports: [
-    RouterOutlet, 
     Header, 
     Nav,
     Section1,
