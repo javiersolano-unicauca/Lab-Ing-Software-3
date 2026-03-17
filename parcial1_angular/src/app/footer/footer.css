@@ -1,5 +1,50 @@
-footer
+footer 
 {
-    border-top: 0.1rem dotted #0F6BBA;
     background: linear-gradient(135deg, #0F6BBA 0%, #0a4a85 60%, #072f56 100%);
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+footer h5,
+footer h6 
+{
+    color: #cfe3f3;
+    font-weight: 600;
+}
+
+footer p,
+footer .small 
+{
+    color: #dce8f3;
+}
+
+.footer-social a 
+{
+    color: white;
+    margin: 0 8px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover 
+{
+    color: #cfe3f3;
+}
+
+.footer-copy 
+{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: #b0cde8;
+}
+
+.footer-copy a 
+{
+    color: #b0cde8;
+    text-decoration: underline;
+}
+
+.footer-copy a:hover 
+{
+    color: white;
 }

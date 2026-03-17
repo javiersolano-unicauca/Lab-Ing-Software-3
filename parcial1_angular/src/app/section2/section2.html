@@ -1,4 +1,4 @@
-<section id="dating-specialties" class="container-fluid row mt-4 d-flex justify-content-center">
+<section id="dating-specialties" class="container-fluid row mt-4 d-flex justify-content-center mx-auto">
     <aside class="col-12 col-md-4 col-sm-12 h-50">
         <div class="col-12">
             <h2>Especialidades</h2>
@@ -20,12 +20,12 @@
             Seleccione una especialidad para leer su descripción
         </div>  
     </aside>
-    <div class="col-12 col-md-8 col-sm-10 container-fluid row g-0">
+    <div class="col-12 col-md-8 col-sm-12 container-fluid row g-0">
 
-        @for(doctor of doctors; track doctor)
+        @for(doctor of doctors; track doctor.name)
         {
             <div class="col-md-4 col-sm-6 col-lg-3 d-flex justify-content-center mt-2">
-                <div class="card col-md-11 text-center border-0 shadow d-flex justify-content-center">
+                <div class="card col-sm-11 col-md-11 text-center border-0 shadow d-flex justify-content-center">
                     <div class="col-8 mt-3 mx-auto">
                         <img src="doctor-{{doctor.gender}}.png" class="card-img-top" alt="Doctor">
                     </div>
